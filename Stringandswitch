@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Welcome {
+	
+public static void main(String[] args) {
+	
+		Scanner choose= new Scanner(System.in);
+		
+		String name= JOptionPane.showInputDialog("Introduce your name");
+		
+		System.out.println("What would you wish to be in your future?");
+		
+		int option = 0;
+		
+		System.out.println("Choose your destiny\n1. Conformism\n2. Ambitious, no limits\n3. Become a legend");
+		
+		option=choose.nextInt();
+		
+		switch (option){
+			
+			case 1:
+				System.out.println("" + name + " ,you'll win about 1500$. Not bad");
+				break;
+				
+			case 2:
+				System.out.println("" + name + " ,you'll win no less than 3000$");
+				break;
+				
+			case 3:
+				System.out.println("" + name + " ,...money?What's that?");
+				break;
+				
+		}
+		}
+}
