@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class areacirculo {
+
+	public static void main(String[] args) {
+		
+		Scanner r= new Scanner(System.in);
+			
+		double radio= Double.parseDouble(JOptionPane.showInputDialog("Introduce radius to obtain the area of a circle"));
+		
+		double resultado= Math.PI * Math.pow(radio,2);
+		
+		resultado= Math.round(resultado*100)/100d;  //To receive only 2 decimals
+		
+		System.out.println("The area of circle with radius " + radio + " is equal to " + resultado);
+
+	}
+
+}
