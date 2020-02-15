@@ -25,8 +25,6 @@ public class tenrandomnumbers {
 			
 			int randomnumber;
 			
-			Random number = new Random();
-			
 			randomnumber= (int) (Math.random()*(num-num2+1)+num2);   //(N-M+1)+M)
 			
 			System.out.print(randomnumber + " ");
