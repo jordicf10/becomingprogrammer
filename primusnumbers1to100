@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public class primusnumbers1to100 {
+
+	public static void main(String[] args) {
+			
+		for(int j=100;j>1;j--) {
+	    	
+	    	   
+	    	   int divisibles= 0;
+	    	   
+	    	   int raiz= (int)Math.sqrt(j);
+	    	   
+	    	   for(int i=raiz; i>1; i--) {
+	    		   if (j%i==0)
+	    		   divisibles++;
+	    	   }
+	    	   
+	    	   if(divisibles<1) {
+	    		   System.out.println(j);
+	    	   }
+	    	   else {
+	    		   continue;
+	    	   }
+	       }
+	       
+	    }
+	    }
